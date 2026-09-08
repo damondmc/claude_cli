@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Read"
+    ]
+  },
+  "model": "claude-fable-5-1[1m]",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "high"
+    }
+  },
+  "tui": "fullscreen",
+  "theme": "custom:damon",
+  "showThinkingSummaries": true,
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "padding": 0
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/claude-watch-hook.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

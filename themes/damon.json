@@ -1,0 +1,23 @@
+{
+  "name": "Damon",
+  "base": "dark",
+  "overrides": {
+    "claude": "#7aa2f7",
+    "claudeShimmer": "#a6c1ff",
+    "success": "#9ece6a",
+    "error": "#f7768e",
+    "warning": "#e0af68",
+    "promptBorder": "#565f89",
+    "planMode": "#7dcfff",
+    "autoAccept": "#bb9af7",
+    "bashBorder": "#e0af68",
+    "diffAdded": "#1f3a2a",
+    "diffRemoved": "#3f1f2a",
+    "diffAddedWord": "#2e5a3a",
+    "diffRemovedWord": "#6a2a3a",
+    "userMessageBackground": "#1b1e2e",
+    "userMessageBackgroundHover": "#24283b",
+    "briefLabelYou": "#7dcfff",
+    "briefLabelClaude": "#7aa2f7"
+  }
+}
