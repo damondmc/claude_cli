@@ -12,3 +12,5 @@ Personal Claude Code config. Run `./install.sh` to copy into `~/.claude`.
 | claude-watch.sh | Tails the session log: thinking, commands, PR-style edit diffs, tool output. Exits and closes its pane when claude exits |
 
 Just run `claude` in iTerm2. The watcher pane opens on startup and closes when claude exits.
+Run `claude-solo` (or `CLAUDE_NO_WATCH=1 claude`) to skip the watcher pane — `install.sh` adds the
+alias to `~/.zshrc` if it isn't already there.
