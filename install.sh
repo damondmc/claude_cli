@@ -1,7 +1,16 @@
 #!/bin/bash
-# Copy this repo's config into ~/.claude
+# Install the claude CLI if missing, then copy this repo's config into ~/.claude
 set -e
 cd "$(dirname "$0")"
+
+# Native installer; auto-updates in the background, unlike an npm global install
+if ! command -v claude >/dev/null; then
+    echo "claude not found, running the native installer"
+    curl -fsSL https://claude.ai/install.sh | bash
+    # The installer puts the binary in ~/.local/bin, which may not be on PATH yet
+    command -v claude >/dev/null || export PATH="$HOME/.local/bin:$PATH"
+fi
+
 mkdir -p ~/.claude/themes
 cp CLAUDE.md settings.json statusline.sh claude-watch.sh claude-watch-hook.sh ~/.claude/
 cp themes/damon.json ~/.claude/themes/

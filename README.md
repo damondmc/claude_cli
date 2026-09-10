@@ -1,6 +1,7 @@
 # claude_cli
 
-Personal Claude Code config. Run `./install.sh` to copy into `~/.claude`.
+Personal Claude Code config. Run `./install.sh` to install the `claude` CLI if it's missing
+(via the native installer) and copy this config into `~/.claude`.
 
 | File | Purpose |
 |---|---|
